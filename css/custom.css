@@ -1,0 +1,86 @@
+
+/* COLROS
+blue : #0178d4
+middle-blue: #26ace8;
+light-blue: #50e6ff;
+*/
+
+:root {
+    --main-color-blue: #0178d4;
+    --main-color-blueMiddle: #26ace8;
+    --main-color-blueLight: #50e5ff;
+    --main-color-whiteClean: rgba(255, 255, 255, 0.6);
+    --main-color-whiteDirty: rgba(232, 243, 248, 0.815);
+}
+
+/* HARD RESETS */
+.bg-primary{
+    background-color: var(--main-color-blue)!important;
+}
+
+
+/* TITLES */
+h2{
+    margin-top: 4rem;
+}
+
+.h2{
+    margin-top: 2rem;
+}
+
+
+/* BUTTONS */
+.btn{
+    background: var(--main-color-blue);
+    color: white;
+    border-color: var(--main-color-blueMiddle);
+}
+
+.btn:hover{
+    background: var(--main-color-blueMiddle);
+    border-color: var(--main-color-blueLight);
+}
+
+.btn:active{
+    border: none;
+}
+
+
+/* SIDEBARs */
+.sidebar {
+    background: 
+        linear-gradient( var(--main-color-whiteClean),  var(--main-color-whiteClean)),
+        url('../resources/images/bg_menu_blur.jpg') 10% 0%;
+}
+
+.sidebar .nav-link{
+    border-top: 1px solid rgba(0,0,0,0);
+    border-bottom: 1px solid rgba(0,0,0,0)
+}
+
+.sidebar .nav-link:hover{
+    border-top: 1px solid var(--main-color-whiteClean);
+    border-bottom: 1px solid var(--main-color-whiteClean);
+    background: linear-gradient( to right,  rgba(182, 182, 182, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1) );
+}
+
+
+/* JUMBOTRONs */
+.jumbotron-title{
+    background: url('../resources/images/Microsoft_0.png') no-repeat top right;
+    background-size: 60%;
+    padding: 10rem 2rem;
+}
+
+.jumbotron-fluid{
+    background: 
+    linear-gradient( to right, var(--main-color-whiteDirty), var(--main-color-blue) ),
+    url('../resources/images/bg_menu.jpg') 50% 50%;
+
+}
+
+
+/* MODALS */
+.modal-open .container, .modal-open .sidebar, .modal-open main {
+    -webkit-filter: blur(1px);
+}
